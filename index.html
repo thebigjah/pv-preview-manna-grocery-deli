@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Manna Grocery &amp; Deli | Tuscaloosa, AL</title>
+<meta name="description" content="Manna Grocery &amp; Deli is an independent local grocery and deli at 2300 McFarland Blvd E in Tuscaloosa.">
+<style>
+:root{
+  --cream:#faf4e8;
+  --paper:#fffaf0;
+  --green:#1f4a33;
+  --green-dark:#143324;
+  --tomato:#a8321f;
+  --wheat:#e9b949;
+  --ink:#2a2118;
+  --muted:#5b4e40;
+  --line:#e4d8c0;
+  --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,"Times New Roman",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6}
+h1,h2,h3{font-family:var(--serif);line-height:1.15;margin:0;color:var(--green-dark)}
+p{margin:0}
+a{color:inherit}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 1.25rem}
+
+.preview{background:var(--ink);color:#fff;font-size:.875rem;line-height:1.4;text-align:center;padding:.65rem 1rem;font-weight:600}
+
+header.site{background:var(--paper);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.9rem;padding-bottom:.9rem}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.25rem;color:var(--green-dark);text-decoration:none;letter-spacing:.01em}
+.brand span{color:var(--tomato)}
+nav a{font-size:.95rem;font-weight:600;color:var(--green);text-decoration:none;margin-left:1.1rem}
+nav a:hover{text-decoration:underline}
+nav .hide-s{display:none}
+
+.hero{background:var(--green);color:#fff6e3;position:relative;overflow:hidden}
+.hero .wrap{position:relative;padding-top:3.5rem;padding-bottom:4rem;z-index:1}
+.eyebrow{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--wheat);margin-bottom:1rem}
+.hero h1{color:#fff;font-size:2.5rem;max-width:14ch}
+.hero p.lead{font-size:1.2rem;margin-top:1.25rem;max-width:34rem;color:#f3ead6}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.btn{display:inline-block;padding:.9rem 1.4rem;border-radius:999px;font-weight:700;text-decoration:none;font-size:1rem;border:2px solid transparent}
+.btn-primary{background:var(--wheat);color:#2a1d00}
+.btn-primary:hover{background:#f3c95f}
+.btn-ghost{border-color:#f3ead6;color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--tomato);outline-offset:3px}
+.hero .btn:focus-visible{outline-color:#fff}
+.addr{margin-top:1.25rem;font-size:1rem;color:#f3ead6}
+
+/* CSS-only shape treatment in place of a photo */
+.shape{position:absolute;border-radius:50%;pointer-events:none}
+.shape.a{width:340px;height:340px;right:-120px;top:-90px;background:var(--wheat);opacity:.18}
+.shape.b{width:220px;height:220px;right:40px;bottom:-110px;background:var(--tomato);opacity:.55}
+.shape.c{width:90px;height:90px;right:210px;top:60px;border:6px solid var(--wheat);opacity:.4;background:none}
+
+section{padding:3.5rem 0}
+h2{font-size:1.9rem;margin-bottom:1rem}
+.kicker{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--tomato);margin-bottom:.6rem}
+
+.story .wrap{display:grid;gap:2rem}
+.story p+p{margin-top:1rem}
+.story p{max-width:38rem;color:var(--muted)}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:1.75rem;align-self:start}
+.stat .big{font-family:var(--serif);font-size:3.5rem;line-height:1;color:var(--tomato);font-weight:700}
+.stat p{margin-top:.5rem;color:var(--ink)}
+
+.offer{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cards{display:grid;gap:1rem;margin-top:1.75rem}
+.card{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:1.5rem;border-top:6px solid var(--green)}
+.card.deli{border-top-color:var(--tomato)}
+.card.local{border-top-color:var(--wheat)}
+.card h3{font-size:1.35rem;margin-bottom:.5rem}
+.card p{color:var(--muted)}
+
+.visit .wrap{display:grid;gap:1.5rem}
+.panel{background:var(--green-dark);color:#fff6e3;border-radius:16px;padding:2rem}
+.panel h2{color:#fff}
+.panel address{font-style:normal;font-size:1.3rem;font-family:var(--serif);line-height:1.4}
+.panel p{margin-top:1rem;color:#f3ead6}
+.panel .btn{margin-top:1.5rem}
+.note{padding:.5rem 0;color:var(--muted)}
+.note h3{font-size:1.35rem;margin-bottom:.5rem}
+
+footer{background:var(--ink);color:#eadfca;padding:2rem 0;font-size:.95rem}
+footer .wrap{display:grid;gap:.5rem}
+footer strong{font-family:var(--serif);font-size:1.15rem;color:#fff}
+footer a{color:#fff}
+
+@media(min-width:640px){
+  nav .hide-s{display:inline}
+  .hero h1{font-size:3.5rem}
+  .cards{grid-template-columns:repeat(3,1fr)}
+}
+@media(min-width:960px){
+  body{font-size:1.125rem}
+  .wrap{padding:0 2rem}
+  .hero .wrap{padding-top:6rem;padding-bottom:7rem}
+  .hero h1{font-size:4.5rem}
+  .shape.a{width:640px;height:640px;right:-120px;top:-180px}
+  .shape.b{width:380px;height:380px;right:120px;bottom:-190px}
+  .shape.c{width:140px;height:140px;right:520px;top:90px}
+  section{padding:5.5rem 0}
+  h2{font-size:2.4rem}
+  .story .wrap{grid-template-columns:1.4fr 1fr;gap:4rem;align-items:start}
+  .visit .wrap{grid-template-columns:1.2fr 1fr;gap:3rem;align-items:center}
+  footer .wrap{grid-template-columns:1fr auto;align-items:center}
+}
+@media(prefers-reduced-motion:no-preference){
+  .btn{transition:background .15s}
+}
+</style>
+</head>
+<body>
+
+<div class="preview" role="note">Concept preview made by Purcell Ventures for Manna Grocery &amp; Deli. Not the official site.</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top">Manna <span>Grocery &amp; Deli</span></a>
+    <nav aria-label="Main">
+      <a class="hide-s" href="#about">Our story</a>
+      <a class="hide-s" href="#offer">What we offer</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="shape a" aria-hidden="true"></div>
+    <div class="shape b" aria-hidden="true"></div>
+    <div class="shape c" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="eyebrow">Tuscaloosa, Alabama</p>
+      <h1>Your neighborhood grocery and deli.</h1>
+      <p class="lead">Manna Grocery &amp; Deli has been an independent, locally run store for more than 40 years. A new chapter starts now, with family still at the front door.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#visit">Visit the store</a>
+        <a class="btn btn-ghost" href="#about">Read our story</a>
+      </div>
+      <p class="addr">2300 McFarland Blvd E, Tuscaloosa, AL</p>
+    </div>
+  </div>
+
+  <section class="story" id="about">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Our story</p>
+        <h2>Frances built it. Anna is carrying it on.</h2>
+        <p>Founder Frances is retiring after decades of running Manna. Her daughter, Anna Drennen, is taking over the store.</p>
+        <p>The shop stays independent and stays local. Many Tuscaloosa families have shopped here for years, and the doors remain open to them and to anyone new.</p>
+      </div>
+      <div class="stat">
+        <div class="big">40+</div>
+        <p>years as an independent local grocery and deli on McFarland Blvd E.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer" id="offer">
+    <div class="wrap">
+      <p class="kicker">What we offer</p>
+      <h2>A grocery and a deli under one roof.</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Grocery</h3>
+          <p>Everyday groceries close to home, so a quick stop does not turn into a trip across town.</p>
+        </article>
+        <article class="card deli">
+          <h3>Deli</h3>
+          <p>A deli counter for food made to eat now or take home. Ask the team what is ready today.</p>
+        </article>
+        <article class="card local">
+          <h3>Locally owned</h3>
+          <p>Run by one Tuscaloosa family for four decades and now passed to the next generation.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="panel">
+        <p class="eyebrow">Find us</p>
+        <h2>Come by the store.</h2>
+        <address>Manna Grocery &amp; Deli<br>2300 McFarland Blvd E<br>Tuscaloosa, AL</address>
+        <p>Stop in and say hello to Anna and the team.</p>
+      </div>
+      <div class="note">
+        <h3>Planning a trip?</h3>
+        <p>Store hours and phone number will go here once the owner confirms them.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong>Manna Grocery &amp; Deli</strong><br>
+      2300 McFarland Blvd E, Tuscaloosa, AL
+    </div>
+    <div>Story source: <a href="https://tuscaloosathread.com/manna-grocery-owner-retires-daughter-succeeds/">Tuscaloosa Thread</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
